@@ -102,7 +102,55 @@
           <p>초반 플레이 구간에 퍼널을 설정해 이탈 지점을 특정하고, 해당 구간의 흐름을 개선했습니다.</p>
         </div>
       </div>
-      <p class="note">※ 실제 기획서 및 데이터 이미지는 보안상 본 웹 포트폴리오에서 제외하였습니다.</p>
+      <div class="details reveal">
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">01</span>
+            <h4 class="detail__title">전투 및 성장 관련 게임 내 주요 시스템 / 콘텐츠 설계</h4>
+          </div>
+          <p class="detail__desc">
+            무기 스위칭을 축으로 하는 전투와, 그에 물리는 성장·수집 콘텐츠를 설계했습니다.
+            던전 진입 구조, 장비 강화·합성 규칙, 코스튬 소환 등 각 시스템의 획득과 소비 지점을 정의했습니다.
+          </p>
+          <div class="shots shots--tall">
+            <figure class="shot">
+              <img src="assets/img/work/tds-combat-1.jpg" alt="Tailed Demon Slayer:RISE 던전 선택 화면" loading="lazy">
+              <figcaption>던전 콘텐츠 — 재화별 전용 던전 구조</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/tds-combat-3.jpg" alt="Tailed Demon Slayer:RISE 무기 강화 화면" loading="lazy">
+              <figcaption>무기 성장 — 등급별 강화 및 합성</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/tds-combat-2.jpg" alt="Tailed Demon Slayer:RISE 코스튬 소환 화면" loading="lazy">
+              <figcaption>코스튬 소환 — 확률형 수집 콘텐츠</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">02</span>
+            <h4 class="detail__title">재화와 시스템 코어루프 설계 및 기준 가치 설정</h4>
+          </div>
+          <p class="detail__desc">
+            콘텐츠에서 재화가 나오고 육성으로 흘러가는 전체 순환을 하나의 구조도로 정리한 뒤,
+            모든 재화에 USD 기준 가치를 부여해 시스템 간 보상량을 같은 잣대로 비교할 수 있게 했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/tds-loop-diagram.jpg" alt="Tailed Demon Slayer:RISE 콘텐츠-재화-육성 코어루프 구조도" loading="lazy">
+              <figcaption>코어루프 구조도 — 콘텐츠에서 육성까지의 재화 흐름</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/tds-loop-value.jpg" alt="재화별 기준 가치 표" loading="lazy">
+              <figcaption>재화별 기준 가치 — USD 환산으로 보상량 비교 기준 수립</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p class="note">※ 밸런스 테이블·퍼널 데이터 등 사내 기밀에 해당하는 자료는 본 웹 포트폴리오에서 제외하였습니다.</p>
     </div>
   </div>
 </article>
@@ -170,6 +218,46 @@
           <p>콘텐츠 파트의 작업 일정을 관리하고 파트원 기획서를 검토·확정했습니다.</p>
         </div>
       </div>
+      <div class="details reveal">
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">01</span>
+            <h4 class="detail__title">인게임 NFT 보상 지급 시스템 설계</h4>
+          </div>
+          <p class="detail__desc">
+            모든 아이템의 수량이 한정된 구조에서는 기존 MMORPG의 확률형 무한 지급 방식을 쓸 수 없습니다.
+            정해진 수량의 아이템을 주기적으로 풀에 쌓고 플레이 기여도에 따라 배분하는 방식으로 보상 지급 규칙을 설계했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/maplen-nft-2.jpg" alt="한정 수량 아이템 분배 방식 설명 자료" loading="lazy">
+              <figcaption>기존 무한 지급 방식과 한정 수량 분배 방식의 비교</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maplen-nft-1.jpg" alt="기여자에게 아이템 생성 권한을 분배하는 구조 설명 자료" loading="lazy">
+              <figcaption>아이템 풀에서 기여자에게 보상이 배분되는 구조</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">02</span>
+            <h4 class="detail__title">인게임 강화 시스템의 비용 결정 모델 기획</h4>
+          </div>
+          <p class="detail__desc">
+            아이템 가치가 보존되어야 하는 경제에서는 강화 비용을 고정값으로 두기 어렵습니다.
+            강화 수요에 따라 가격이 따라 움직이는 수요 기반 가격 결정 모델을 설계해, 시장 상황에 맞춰 비용이 조정되도록 했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/maplen-pricing.jpg" alt="수요 기반 가격 결정 모델 도식" loading="lazy">
+              <figcaption>수요 기반 가격 결정 모델 — 강화 수요와 가격의 연동 구조</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
       <p class="note">※ 이미지 출처 : maplestoryuniverse.io</p>
     </div>
   </div>
@@ -240,7 +328,52 @@
           <p>성장 곡선과 콘텐츠 난이도, 보상 구조 전반을 밸런싱하고 라이브 지표에 따라 조정했습니다.</p>
         </div>
       </div>
-      <p class="note">※ 실제 기획서 및 데이터 이미지는 보안상 본 웹 포트폴리오에서 제외하였습니다.</p>
+
+      <div class="details reveal">
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">01</span>
+            <h4 class="detail__title">전투 및 성장 관련 게임 내 주요 시스템 / 콘텐츠 설계</h4>
+          </div>
+          <p class="detail__desc">
+            횡스크롤 액션의 타격감과 방치형의 편의성을 함께 만족시키기 위해, 장비 등급·강화·승급 체계와
+            스킬 조합 구조를 설계했습니다. 수동 조작의 여지를 남기면서도 방치 상태에서 성장이 이어지도록 구성했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/bers-combat-1.jpg" alt="광전사 키우기 장비 시스템 화면" loading="lazy">
+              <figcaption>장비 시스템 — 등급·강화·승급 구조</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/bers-combat-2.jpg" alt="광전사 키우기 스킬 시스템 화면" loading="lazy">
+              <figcaption>스킬 시스템 — 액티브 / 패시브 조합과 강화</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">02</span>
+            <h4 class="detail__title">재화와 시스템 코어루프 설계 및 기준 가치 설정</h4>
+          </div>
+          <p class="detail__desc">
+            상자 포인트를 중심으로 재화가 분기되어 캐릭터·수호탑·장비·건설 타워로 흘러가는 순환을 설계하고,
+            각 재화에 기준 가격을 부여해 콘텐츠별 보상 설계의 기준선을 만들었습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/bers-loop-diagram.jpg" alt="광전사 키우기 캐릭터 육성 재화 코어루프 구조도" loading="lazy">
+              <figcaption>코어루프 구조도 — 콘텐츠에서 육성으로 이어지는 재화 흐름</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/bers-loop-value.jpg" alt="광전사 키우기 재화 목록 및 기준 가격 표" loading="lazy">
+              <figcaption>재화 목록 — 사용처와 기준 가격 정의</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p class="note">※ 밸런스 테이블 등 사내 기밀에 해당하는 자료는 본 웹 포트폴리오에서 제외하였습니다.</p>
     </div>
   </div>
 </article>
@@ -308,7 +441,92 @@
           <p>대형 개발 피쳐인 비동기 PVP 콘텐츠의 기획을 총괄하고, 전투·매칭·보상 밸런스를 설계했습니다.</p>
         </div>
       </div>
-      <p class="note">※ 실제 기획서 및 데이터 이미지는 보안상 본 웹 포트폴리오에서 제외하였습니다.</p>
+
+      <div class="details reveal">
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">01</span>
+            <h4 class="detail__title">약 50여 종 이상의 기간제 콘텐츠 전체 기획</h4>
+          </div>
+          <p class="detail__desc">
+            2015년부터 2021년까지 성수기 대형 콘텐츠와 비성수기 이벤트를 가리지 않고 담당했습니다.
+            의도와 목적 설계에서 시작해 시스템·밸런싱·UI/UX까지 콘텐츠 하나를 통째로 맡는 방식으로 진행했고,
+            아래는 그중 일부입니다.
+          </p>
+          <div class="shots shots--mini">
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-1.jpg" alt="메이플스토리 유니온 아레나 시즌1 홍보 이미지" loading="lazy">
+              <figcaption>유니온 아레나 SEASON 1</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-3.jpg" alt="메이플스토리 챌린지 월드 무릉도장 홍보 이미지" loading="lazy">
+              <figcaption>챌린지 월드 시즌1 — 무릉도장</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-4.jpg" alt="메이플스토리 어드벤처 드릴 홍보 이미지" loading="lazy">
+              <figcaption>어드벤처 드릴</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-2.jpg" alt="메이플스토리 14주년 홍보 이미지" loading="lazy">
+              <figcaption>14주년 기념 콘텐츠</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-5.jpg" alt="메이플스토리 기간제 콘텐츠 홍보 이미지" loading="lazy">
+              <figcaption>기간제 콘텐츠</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-6.jpg" alt="메이플스토리 기간제 콘텐츠 홍보 이미지" loading="lazy">
+              <figcaption>기간제 콘텐츠</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/work/maple-promo-7.jpg" alt="메이플스토리 기간제 콘텐츠 홍보 이미지" loading="lazy">
+              <figcaption>기간제 콘텐츠</figcaption>
+            </figure>
+          </div>
+          <div class="shots shots--wide" style="margin-top:16px;">
+            <figure class="shot">
+              <img src="assets/img/work/maple-docs.jpg" alt="담당 콘텐츠 기획서 파일 목록" loading="lazy">
+              <figcaption>담당 콘텐츠 기획서 목록 — 2016년부터 2020년까지 작성한 기획서와 밸런스 시트</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">02</span>
+            <h4 class="detail__title">최상위 신규 지역 성장 시스템 기획</h4>
+          </div>
+          <p class="detail__desc">
+            최상위 지역에 적용되는 신규 성장 축으로 어센틱 심볼 시스템을 설계했습니다.
+            기존 장비 성장과 분리된 별도 레벨 체계를 두어, 최대 레벨 확장 이후의 성장 여지를 확보했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/maple-symbol.jpg" alt="어센틱 심볼 UI 구성안" loading="lazy">
+              <figcaption>어센틱 심볼 — 장착 구조와 UI 구성안</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="detail__head">
+            <span class="detail__no">03</span>
+            <h4 class="detail__title">신규 PVP 콘텐츠 전투 및 매칭, 보상 밸런싱</h4>
+          </div>
+          <p class="detail__desc">
+            직업별 성능 차이가 큰 MMORPG에서 PVP를 성립시키기 위해, 실시간 대전 대신
+            5라운드 비동기 매칭 구조를 택했습니다. 유니온 전력을 기준으로 상대를 매칭하고 보상을 배분하도록 설계했습니다.
+          </p>
+          <div class="shots shots--wide">
+            <figure class="shot">
+              <img src="assets/img/work/maple-pvp.jpg" alt="유니온 아레나 라운드별 매칭 화면" loading="lazy">
+              <figcaption>유니온 아레나 — 5라운드 비동기 매칭 구조</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p class="note">※ 밸런스 테이블 등 사내 기밀에 해당하는 자료는 본 웹 포트폴리오에서 제외하였습니다.</p>
     </div>
   </div>
 </article>

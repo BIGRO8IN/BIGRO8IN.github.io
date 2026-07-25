@@ -788,6 +788,76 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.3; letter-spacing: -0.02em; }
   color: var(--text-mute);
 }
 
+/* ------------------------------------------------- 작업 상세 이미지 */
+
+.details { margin-top: 54px; }
+
+.detail { margin-bottom: 46px; }
+.detail:last-child { margin-bottom: 0; }
+
+.detail__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.detail__no {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.detail__title { font-size: 18px; margin: 0; }
+.detail__desc {
+  margin: 0 0 22px;
+  font-size: 15px;
+  color: var(--text-dim);
+  max-width: 68ch;
+}
+
+.shots { display: grid; gap: 16px; }
+.shots--wide { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.shots--tall { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.shots--mini { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+/* 세로로 지나치게 긴 이미지는 높이를 제한해 한 화면에 읽히게 한다 */
+.shots--wide .shot img { max-height: 700px; object-fit: contain; }
+/* 홍보 이미지들은 원본 비율이 제각각이라 상자를 통일하고 잘리지 않게 맞춘다 */
+.shots--mini .shot img { aspect-ratio: 4 / 3; object-fit: contain; }
+
+.shot {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.shot:hover { border-color: var(--accent-line); transform: translateY(-3px); }
+.shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #0a0c10;
+}
+.shot figcaption {
+  padding: 11px 15px 13px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-mute);
+}
+
+@media (max-width: 720px) {
+  .details { margin-top: 40px; }
+  .detail { margin-bottom: 36px; }
+  .shots--tall { grid-template-columns: 1fr 1fr; }
+  .shots--mini { grid-template-columns: 1fr 1fr; }
+}
+
 /* --------------------------------------------------------------- resume */
 
 .res-block { margin-bottom: 66px; }
