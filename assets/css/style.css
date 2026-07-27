@@ -908,6 +908,9 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.3; letter-spacing: -0.02em; }
   padding: 22px 24px 18px;
 }
 .play-genre__name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -915,19 +918,51 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.3; letter-spacing: -0.02em; }
   color: var(--accent);
   margin-bottom: 14px;
 }
+/* 강점 카드(.card__icon)와 같은 언어를 축소 적용 */
+.play-genre__icon {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.play-genre__icon svg { width: 15px; height: 15px; }
 
 .play-list { list-style: none; margin: 0; padding: 0; }
 
 .play-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: 12px;
+  gap: 6px 12px;
   padding: 9px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 .play-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .play-item__name { font-size: 15px; font-weight: 500; }
+
+/* 플레이 타임 + 과금액을 함께 표기하는 경우 */
+.play-metrics {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.play-spend {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  white-space: nowrap;
+}
 
 /* 플레이 타임 구간을 색 농도로 구분해 한눈에 비중이 읽히게 */
 .play-hours {
