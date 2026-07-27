@@ -24,7 +24,7 @@ python3 -m http.server 4321
 
 ## GitHub Pages로 배포하기
 
-레퍼런스 사이트(`khwan789.github.io`)와 같은 `username.github.io` 형태로 올리는 방법입니다.
+`username.github.io` 형태로 올리는 방법입니다.
 
 > **먼저 알아둘 것**
 > 따로 폴더를 새로 만들거나 `git clone` 할 필요가 없습니다.
