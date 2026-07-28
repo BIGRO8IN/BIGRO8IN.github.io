@@ -904,6 +904,56 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.3; letter-spacing: -0.02em; }
   .shots--mini { grid-template-columns: 1fr 1fr; }
 }
 
+/* ----------------------------------------------- 홈: 플레이 이력 요약 */
+
+.play-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.play-sum {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 28px 28px 24px;
+}
+.play-sum__head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.play-sum__count {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.play-sum__count small { font-size: 0.5em; font-weight: 600; margin-left: 2px; }
+.play-sum__name { font-size: 15px; font-weight: 600; }
+
+.play-sum__list { list-style: none; margin: 0; padding: 0; }
+.play-sum__list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 14.5px;
+  color: var(--text-dim);
+}
+.play-sum__list b {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-mute);
+}
+
+.play-more { margin-top: 30px; }
+
 /* ------------------------------------------------------ 플레이 이력 */
 
 .play-platform {
